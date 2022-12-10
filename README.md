@@ -4,12 +4,12 @@ Các công ty hiện nay có rất nhiều hoạt động ngoại khóa giúp n�
 - Thiết kế cơ sở dữ liệu:
 ![image](https://user-images.githubusercontent.com/83160881/206862832-b748cce1-b0c0-4592-8726-f14cf1972d4b.png)
 
-Admin quản lý:
+- Admin quản lý:
    - Các chi nhánh công ty
    - User/ Employee
    - Topic
    - Role
-Employee có thể:
+- Employee có thể:
    - Xem thông tin cá nhân
    - Chỉnh sửa thông tin cá nhân
    - Đăng ký tham gia open talk
