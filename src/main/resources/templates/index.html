@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+<h1>Employee</h1>
+Language :
+<a href="?language=en">English</a>|
+<a href="?language=vi_VN">Viet Nam</a>|
+
+
+<p th:text="#{hello}"></p>
+
+<table border="1">
+    <tr>
+        <th th:text="#{employeeId}"></th>
+        <th th:text="#{firstName}"></th>
+        <th th:text="#{lastName}"></th>
+        <th th:text="#{dateOfBirth}"></th>
+        <th th:text="#{branch}"></th>
+    </tr>
+    <tr th:each="employee: ${employees}">
+        <td th:text="${employee.getEmployeeId()}"></td>
+        <td th:text="${employee.getFirstName()}"></td>
+        <td th:text="${employee.getLastName()}"></td>
+        <td th:text="${employee.getDateOfBirth()}"></td>
+        <td th:text="${employee.getBranch()}"></td>
+    </tr>
+</table>
+<br/>
+<div th:object="${company}">
+    Chi nhánh: <span th:text="*{branchName}"></span>
+</div>
+<br>
+
+</body>
+</html>
