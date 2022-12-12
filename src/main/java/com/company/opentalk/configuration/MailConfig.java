@@ -16,7 +16,7 @@ public class MailConfig {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
         mailSender.setUsername("toan.ngothi@ncc.asia");
-        mailSender.setPassword("Lan1712/3997");
+        mailSender.setPassword("*****"); //cần nhập pass email
 
         Properties properties = mailSender.getJavaMailProperties();
         properties.put("mail.transport.protocol", "smtp");
